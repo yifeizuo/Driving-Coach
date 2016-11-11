@@ -1,0 +1,140 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!-- ViewPager -->
+        <com.example.yzuo.drivingcoach.NonSwipeableViewPager
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:id="@+id/pager_route"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="8dp"/>
+        <!-- Footer -->
+
+        <!-- ViewPager -->
+        <com.example.yzuo.drivingcoach.NonSwipeableViewPager
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:id="@+id/pager_driving"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            />
+        <!-- Footer -->
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group_list_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00000000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <RadioButton
+            android:id="@+id/route"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/ROUTE"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/themeColor"
+            android:padding="5dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/button_style_route_padding"
+            android:button="@null"/>
+        <RadioButton
+            android:id="@+id/driving"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/DRIVING"
+            android:textColor="@color/themeColor"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_style_driving_padding"
+            android:button="@null"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/option_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trips of last week"
+        android:gravity="center"
+        android:layout_marginTop="70dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layout_gravity="bottom|center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <!-- pager_route -->
+            <Button
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/btn_prev_route"
+                android:background="@drawable/button_left_background" />
+
+            <Button
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/btn_next_route"
+                android:background="@drawable/button_right_background" />
+
+            <!-- pager_driving -->
+            <Button
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/btn_prev_driving"
+                android:background="@drawable/button_left_background" />
+
+            <Button
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/btn_next_driving"
+                android:background="@drawable/button_right_background" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/timespan"
+            android:src="@drawable/ic_stat_notify_saved_trips_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="bottom|end"
+            />
+    </LinearLayout>
+
+</FrameLayout>
+

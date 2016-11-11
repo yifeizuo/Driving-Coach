@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#27C9A2"/>
+            <stroke android:color="@color/themeColor" android:width="2dp" />
+            <!--corners allow us to make the rounded corners button-->
+            <corners
+                android:bottomLeftRadius="0dip"
+                android:bottomRightRadius="10dip"
+                android:topLeftRadius="0dip"
+                android:topRightRadius="10dip"/>
+
+        </shape>
+    </item>
+
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#00000000"/>
+            <stroke android:color="@color/themeColor" android:width="2dp" />
+            <!--corners allow us to make the rounded corners button-->
+            <corners
+                android:bottomLeftRadius="0dip"
+                android:bottomRightRadius="10dip"
+                android:topLeftRadius="0dip"
+                android:topRightRadius="10dip"/>
+
+        </shape>
+    </item>
+</selector>

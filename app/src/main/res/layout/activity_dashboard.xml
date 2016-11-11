@@ -1,0 +1,104 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.yzuo.drivingcoach.dashboardActivity">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dip">
+            <ImageView
+                android:id="@+id/happy_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="35dp"
+                android:src="@drawable/ic_launcher_happy_face_icon"
+                >
+            </ImageView>
+            <TextView
+                android:id="@+id/commentsRegardingTrip"
+                android:paddingTop="50dp"
+                android:text="@string/commentsRegardingTrip"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textColor="@color/themeColor"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_toRightOf="@+id/happy_face"
+                android:textSize="22sp">
+            </TextView>
+            <TextView
+                android:id="@+id/commentsRegardingTrip_content"
+                android:paddingTop="20dp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="@color/themeColor"
+                android:gravity="left"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_toRightOf="@+id/happy_face"
+                android:layout_below="@+id/commentsRegardingTrip"
+                android:textSize="15sp">
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dip">
+
+                <ImageView
+                    android:id="@+id/fuel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher_fuel_saved_icon"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="15dp"
+                    >
+                </ImageView>
+                <TextView
+                    android:id="@+id/fuelEconomyFeedback"
+                    android:paddingTop="25dp"
+                    android:text="@string/fuelEconomyFeedback"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/themeColor"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_toRightOf="@+id/fuel"
+                    android:textSize="22sp">
+                </TextView>
+                <TextView
+                    android:id="@+id/fuelEconomyFeedback_content"
+                    android:paddingTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:textColor="@color/themeColor"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_toRightOf="@+id/fuel"
+                    android:layout_below="@+id/fuelEconomyFeedback"
+                    android:textSize="15sp">
+                </TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
